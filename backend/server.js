@@ -19,7 +19,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 // Serve static files from current directory
-app.use(express.static(path.join(__dirname)));
+app.use(express.static(path.join(__dirname,'../frontend')));
 
 // ========== LOCAL MONGODB CONNECTION ==========
 const MONGODB_URI = 'mongodb://p:p7@ac-zubpgyn-shard-00-00.9dpzorw.mongodb.net:27017,ac-zubpgyn-shard-00-01.9dpzorw.mongodb.net:27017,ac-zubpgyn-shard-00-02.9dpzorw.mongodb.net:27017/?ssl=true&replicaSet=atlas-ksiy0x-shard-0&authSource=admin&appName=Cluster0';
