@@ -1126,4 +1126,286 @@ section {
     .hero-title {
         font-size: 2rem;
     }
+    /* ===== ENHANCED MOBILE RESPONSIVENESS ===== */
+/* Additional styles for perfect mobile experience */
+
+/* Touch-friendly button sizes */
+@media (max-width: 768px) {
+    /* Larger touch targets for buttons */
+    .btn, 
+    .social-icon, 
+    .nav-link,
+    .interest-card,
+    .project-links a,
+    .back-to-top {
+        cursor: pointer;
+        -webkit-tap-highlight-color: transparent;
+    }
+    
+    .btn {
+        padding: 0.75rem 1.5rem;
+        min-height: 44px;
+    }
+    
+    .social-icon {
+        width: 48px;
+        height: 48px;
+        min-width: 48px;
+    }
+    
+    /* Improved spacing for mobile */
+    section {
+        padding: 3rem 0;
+    }
+    
+    .hero {
+        padding: 5rem 0 3rem;
+        min-height: auto;
+    }
+    
+    .hero-title {
+        font-size: 2rem;
+        line-height: 1.3;
+    }
+    
+    .typed-text {
+        font-size: 1rem;
+    }
+    
+    .hero-desc {
+        font-size: 0.9rem;
+        padding: 0 0.5rem;
+    }
+    
+    /* Better card spacing on mobile */
+    .about-grid,
+    .skills-container,
+    .projects-grid,
+    .achievements-grid {
+        gap: 1.2rem;
+    }
+    
+    .about-card-glass,
+    .skills-category,
+    .achievement-card {
+        padding: 1.2rem;
+    }
+    
+    .project-card {
+        margin: 0 0.5rem;
+    }
+    
+    .project-content {
+        padding: 1rem;
+    }
+    
+    /* Improved form on mobile */
+    .contact-wrapper {
+        padding: 1.5rem;
+        margin: 0 0.5rem;
+    }
+    
+    .form-group input,
+    .form-group textarea {
+        padding: 0.9rem 0.9rem 0.9rem 2.5rem;
+        font-size: 16px; /* Prevents zoom on iOS */
+    }
+    
+    .btn-submit {
+        width: 100%;
+        justify-content: center;
+        padding: 0.9rem;
+    }
+    
+    /* Better interest cards on mobile */
+    .interests-grid {
+        gap: 0.7rem;
+        padding: 0 0.5rem;
+    }
+    
+    .interest-card {
+        padding: 0.5rem 1.2rem;
+        font-size: 0.8rem;
+    }
+    
+    /* Footer spacing */
+    .footer {
+        padding: 1.5rem 0;
+    }
+    
+    .footer-content {
+        gap: 0.8rem;
+    }
+    
+    /* Scroll indicator hide on mobile for cleaner look */
+    .scroll-indicator {
+        display: none;
+    }
+}
+
+/* Small phones (up to 480px) */
+@media (max-width: 480px) {
+    .container {
+        padding: 0 4%;
+    }
+    
+    .hero-title {
+        font-size: 1.8rem;
+    }
+    
+    .section-title {
+        font-size: 1.6rem;
+    }
+    
+    .section-tag {
+        font-size: 0.6rem;
+        letter-spacing: 3px;
+    }
+    
+    .hero-buttons {
+        flex-direction: column;
+        gap: 0.8rem;
+        width: 100%;
+        padding: 0 1rem;
+    }
+    
+    .btn {
+        width: 100%;
+        justify-content: center;
+    }
+    
+    .hero-card {
+        padding: 0.6rem 1rem;
+        gap: 0.6rem;
+    }
+    
+    .hero-card-inner {
+        padding: 0.3rem 0.8rem;
+        font-size: 0.7rem;
+    }
+    
+    .profile-container {
+        width: 220px;
+        height: 220px;
+    }
+    
+    .project-tech {
+        gap: 0.4rem;
+    }
+    
+    .project-tech span {
+        font-size: 0.65rem;
+        padding: 0.2rem 0.7rem;
+    }
+    
+    .contact-detail {
+        gap: 0.8rem;
+    }
+    
+    .contact-detail i {
+        width: 38px;
+        height: 38px;
+        font-size: 0.9rem;
+    }
+    
+    .interest-card {
+        padding: 0.4rem 1rem;
+        font-size: 0.75rem;
+    }
+    
+    .interest-card i {
+        font-size: 0.8rem;
+    }
+}
+
+/* Landscape mode on mobile */
+@media (max-width: 768px) and (orientation: landscape) {
+    .hero {
+        min-height: auto;
+        padding: 4rem 0 2rem;
+    }
+    
+    .hero-container {
+        gap: 1rem;
+    }
+    
+    .profile-container {
+        width: 180px;
+        height: 180px;
+    }
+    
+    .hero-card {
+        padding: 0.5rem 1rem;
+    }
+    
+    section {
+        padding: 2rem 0;
+    }
+}
+
+/* Prevent zoom on input focus for iOS */
+@media (max-width: 768px) {
+    input, 
+    textarea, 
+    select, 
+    button {
+        font-size: 16px !important;
+    }
+}
+
+/* Improved touch feedback for mobile */
+@media (hover: none) and (pointer: coarse) {
+    .btn:active,
+    .social-icon:active,
+    .interest-card:active,
+    .project-card:active,
+    .nav-link:active {
+        transform: scale(0.96);
+        transition: transform 0.1s ease;
+    }
+    
+    .btn-primary:active {
+        background: var(--gradient-premium);
+        opacity: 0.9;
+    }
+}
+
+/* Smooth scrolling for mobile */
+@media (max-width: 768px) {
+    html {
+        scroll-behavior: smooth;
+        -webkit-overflow-scrolling: touch;
+    }
+    
+    body {
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+}
+
+/* Better card borders on mobile (less harsh) */
+@media (max-width: 768px) {
+    .about-card-glass,
+    .skills-category,
+    .project-card,
+    .achievement-card,
+    .interest-card {
+        border-width: 0.5px;
+    }
+}
+
+/* Improved loading experience on mobile */
+@media (max-width: 768px) {
+    .back-to-top {
+        bottom: 20px;
+        right: 20px;
+        width: 40px;
+        height: 40px;
+        font-size: 1rem;
+    }
+    
+    .back-to-top.show {
+        opacity: 0.9;
+    }
+}
 }
